@@ -1,0 +1,25 @@
+name: sarj33t_login_btns
+
+description: A Flutter package for both android and iOS which provides Social sign-in Buttons
+
+version: 0.0.9
+
+homepage: https://github.com/sarj33t/flutter-social-buttons
+
+environment:
+  sdk: ^3.5.1
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  assets:
+    - assets/
