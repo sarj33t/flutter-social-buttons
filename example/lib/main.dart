@@ -30,7 +30,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,52 +44,31 @@ class _LoginPageState extends State<LoginPage> {
           children: <Widget>[
             SignInButton(
               Buttons.google,
-              onPressed: (){
+              onPressed: () {
                 debugPrint("Login with Google");
               },
             ),
-            SignInButton(
-              Buttons.facebook,
-              onPressed: (){
-                debugPrint("Login with Facebook");
-              }
-            ),
-            SignInButton(
-              Buttons.twitter,
-              onPressed: (){
-                debugPrint("Login with Twitter");
-              }
-            ),
-            SignInButton(
-              Buttons.apple,
-              onPressed: (){
-                debugPrint("Login with Apple");
-              }
-            ),
-            SignInButton(
-              Buttons.microsoft,
-              onPressed: (){
-                debugPrint("Login with Microsoft");
-              }
-            ),
-            SignInButton(
-              Buttons.gitHub,
-              onPressed: (){
-                debugPrint("Login with GitHub");
-              }
-            ),
-            SignInButton(
-              Buttons.linkedIn,
-              onPressed: (){
-                debugPrint("Login with LinkedIn");
-              }
-            ),
-            SignInButton(
-              Buttons.email,
-              onPressed: (){
-                debugPrint("Login with Email");
-              }
-            ),
+            SignInButton(Buttons.facebook, onPressed: () {
+              debugPrint("Login with Facebook");
+            }),
+            SignInButton(Buttons.twitter, onPressed: () {
+              debugPrint("Login with Twitter");
+            }),
+            SignInButton(Buttons.apple, onPressed: () {
+              debugPrint("Login with Apple");
+            }),
+            SignInButton(Buttons.microsoft, onPressed: () {
+              debugPrint("Login with Microsoft");
+            }),
+            SignInButton(Buttons.gitHub, onPressed: () {
+              debugPrint("Login with GitHub");
+            }),
+            SignInButton(Buttons.linkedIn, onPressed: () {
+              debugPrint("Login with LinkedIn");
+            }),
+            SignInButton(Buttons.email, onPressed: () {
+              debugPrint("Login with Email");
+            }),
           ],
         ),
       ),

@@ -10,21 +10,21 @@ class ButtonWidget extends StatelessWidget {
 
   const ButtonWidget(
       {super.key,
-        required this.backgroundColor,
-        required this.onPressed,
-        required this.text,
-        this.icon,
-        required this.textColor,
-        required this.iconColor,
-        this.image,
-        this.shape});
+      required this.backgroundColor,
+      required this.onPressed,
+      required this.text,
+      this.icon,
+      required this.textColor,
+      required this.iconColor,
+      this.image,
+      this.shape});
 
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
       key: key,
-      onPressed: (){
-        if(onPressed != null){
+      onPressed: () {
+        if (onPressed != null) {
           onPressed!.call();
         }
       },
@@ -43,11 +43,12 @@ class ButtonWidget extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                   horizontal: 13,
                 ),
-                child: image?? Icon(
-                  icon,
-                  size: 20,
-                  color: iconColor,
-                ),
+                child: image ??
+                    Icon(
+                      icon,
+                      size: 20,
+                      color: iconColor,
+                    ),
               ),
               Text(
                 text,

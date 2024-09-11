@@ -22,7 +22,8 @@ class SignInButton extends StatelessWidget {
   final ShapeBorder? shape;
   final String? text;
 
-  const SignInButton(this.button, {super.key, required this.onPressed, this.text, this.shape});
+  const SignInButton(this.button,
+      {super.key, required this.onPressed, this.text, this.shape});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +37,7 @@ class SignInButton extends StatelessWidget {
           backgroundColor: colorWhite,
           textColor: colorBlack,
           iconColor: colorOrange,
-          shape: shape?? ButtonTheme.of(context).shape,
+          shape: shape ?? ButtonTheme.of(context).shape,
         );
       case Buttons.google:
         return ButtonWidget(
@@ -60,18 +61,18 @@ class SignInButton extends StatelessWidget {
           backgroundColor: colorWhite,
           textColor: colorBlack,
           iconColor: colorBlue,
-          shape: shape?? ButtonTheme.of(context).shape,
+          shape: shape ?? ButtonTheme.of(context).shape,
         );
       case Buttons.facebook:
         return ButtonWidget(
           key: const ValueKey(facebook),
           text: text ?? '$signWith $facebook',
-          icon:FontAwesomeIcons.facebookF,
+          icon: FontAwesomeIcons.facebookF,
           onPressed: onPressed,
           backgroundColor: facebookBgColor,
           textColor: colorWhite,
           iconColor: colorWhite,
-          shape: shape?? ButtonTheme.of(context).shape,
+          shape: shape ?? ButtonTheme.of(context).shape,
         );
       case Buttons.gitHub:
         return ButtonWidget(
@@ -79,10 +80,10 @@ class SignInButton extends StatelessWidget {
           text: text ?? '$signWith $github',
           icon: FontAwesomeIcons.github,
           onPressed: onPressed,
-          backgroundColor:  githubBgColor,
+          backgroundColor: githubBgColor,
           textColor: colorWhite,
           iconColor: colorWhite,
-          shape: shape?? ButtonTheme.of(context).shape,
+          shape: shape ?? ButtonTheme.of(context).shape,
         );
       case Buttons.apple:
         return ButtonWidget(
@@ -93,7 +94,7 @@ class SignInButton extends StatelessWidget {
           backgroundColor: colorWhite,
           textColor: colorBlack,
           iconColor: colorRed,
-          shape: shape?? ButtonTheme.of(context).shape,
+          shape: shape ?? ButtonTheme.of(context).shape,
         );
       case Buttons.linkedIn:
         return ButtonWidget(
@@ -104,7 +105,7 @@ class SignInButton extends StatelessWidget {
           backgroundColor: linkedInBgColor,
           textColor: colorWhite,
           iconColor: colorWhite,
-          shape: shape?? ButtonTheme.of(context).shape,
+          shape: shape ?? ButtonTheme.of(context).shape,
         );
       case Buttons.microsoft:
         return ButtonWidget(
@@ -115,7 +116,7 @@ class SignInButton extends StatelessWidget {
           backgroundColor: colorWhite,
           textColor: colorBlack,
           iconColor: colorBlue,
-          shape: shape?? ButtonTheme.of(context).shape,
+          shape: shape ?? ButtonTheme.of(context).shape,
         );
       case Buttons.twitter:
         return ButtonWidget(
@@ -126,9 +127,8 @@ class SignInButton extends StatelessWidget {
           backgroundColor: twitterBgColor,
           textColor: colorWhite,
           iconColor: colorWhite,
-          shape: shape?? ButtonTheme.of(context).shape,
+          shape: shape ?? ButtonTheme.of(context).shape,
         );
     }
   }
 }
-
